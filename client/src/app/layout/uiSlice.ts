@@ -18,11 +18,11 @@ export const uiSlice = createSlice({
         stopLoading: (state) => {
             state.isLoading = false;
         }, 
-        setDarkmode: (state) => {
+        setDarkMode: (state) => {
             localStorage.setItem('darkMode', JSON.stringify(!state.darkMode)); 
             state.darkMode = !state.darkMode
         }
     }
 })
 
-export const {startLoading, stopLoading, setDarkmode} = uiSlice.actions;
+export const {startLoading, stopLoading, setDarkMode} = uiSlice.actions;
